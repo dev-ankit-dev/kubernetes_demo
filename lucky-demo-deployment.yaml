@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lucky-first
+  labels:
+    app: lucky-first
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lucky-first
+  template:
+    metadata:
+      labels:
+        app: lucky-first
+    spec:
+      containers:
+      - name: lucky-first
+        image: microservicestraning/lucky_demo.jar
+        ports:
+        - containerPort: 80
