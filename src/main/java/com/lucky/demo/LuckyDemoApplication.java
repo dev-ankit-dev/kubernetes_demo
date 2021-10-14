@@ -17,7 +17,7 @@ public class LuckyDemoApplication {
 
 	public String hello() {
 
-		return "hello frist example of kubernates";
+		return "hello frist example of kubernates in git hub";
 	}
 
 }
